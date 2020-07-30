@@ -56,3 +56,120 @@ VALUES('cat_2', 'categoria_2');
 
 INSERT INTO categoria(nombre_categoria, descripcion)
 VALUES('cat_3', 'categoria_3');
+
+INSERT INTO producto(nombre_item, descripcion, valor_unitario,id_categoria)
+VALUES('producto_1', 'descripcion_producto_1',1500,1);
+
+INSERT INTO producto(nombre_item, descripcion, valor_unitario,id_categoria)
+VALUES('producto_2', 'descripcion_producto_2',2000,2);
+
+INSERT INTO producto(nombre_item, descripcion, valor_unitario,id_categoria)
+VALUES('producto_3', 'descripcion_producto_3',2500,3);
+
+INSERT INTO producto(nombre_item, descripcion, valor_unitario,id_categoria)
+VALUES('producto_4', 'descripcion_producto_4',1000,1);
+
+INSERT INTO producto(nombre_item, descripcion, valor_unitario,id_categoria)
+VALUES('producto_5', 'descripcion_producto_5',1500,2);
+
+INSERT INTO producto(nombre_item, descripcion, valor_unitario,id_categoria)
+VALUES('producto_6', 'descripcion_producto_6',2000,3);
+
+INSERT INTO producto(nombre_item, descripcion, valor_unitario,id_categoria)
+VALUES('producto_7', 'descripcion_producto_7',2500,2);
+
+INSERT INTO producto(nombre_item, descripcion, valor_unitario,id_categoria)
+VALUES('producto_8', 'descripcion_producto_8',4000,1);
+
+--facturas (2) para cliente_1
+
+INSERT INTO factura(fecha_factura, subtotal, id_cliente)
+VALUES('2001-10-05',3500,1);
+
+INSERT INTO factura(fecha_factura, subtotal, id_cliente)
+VALUES('2002-08-19',6000,1);
+
+INSERT INTO rel_producto_factura(id_item, id_factura, cantidad)
+VALUES(1, 1, 1);
+
+INSERT INTO rel_producto_factura(id_item, id_factura, cantidad)
+VALUES(2, 1, 1);
+
+INSERT INTO rel_producto_factura(id_item, id_factura, cantidad)
+VALUES(1, 2, 1);
+
+INSERT INTO rel_producto_factura(id_item, id_factura, cantidad)
+VALUES(2, 2, 1);
+
+INSERT INTO rel_producto_factura(id_item, id_factura, cantidad)
+VALUES(3, 2, 1);
+
+--facturas (3) para cliente_2
+
+INSERT INTO factura(fecha_factura, subtotal, id_cliente)
+VALUES('2013-04-03',5000,2);
+
+INSERT INTO factura(fecha_factura, subtotal, id_cliente)
+VALUES('2015-07-07',4000,2);
+
+INSERT INTO factura(fecha_factura, subtotal, id_cliente)
+VALUES('2019-08-01',8500,2);
+
+INSERT INTO rel_producto_factura(id_item, id_factura, cantidad)
+VALUES(1, 3, 2);
+
+INSERT INTO rel_producto_factura(id_item, id_factura, cantidad)
+VALUES(2, 3, 1);
+
+INSERT INTO rel_producto_factura(id_item, id_factura, cantidad)
+VALUES(7, 4, 1);
+
+INSERT INTO rel_producto_factura(id_item, id_factura, cantidad)
+VALUES(5, 4, 1);
+
+INSERT INTO rel_producto_factura(id_item, id_factura, cantidad)
+VALUES(6, 5, 1);
+
+INSERT INTO rel_producto_factura(id_item, id_factura, cantidad)
+VALUES(7, 5, 1);
+
+INSERT INTO rel_producto_factura(id_item, id_factura, cantidad)
+VALUES(8, 5, 1);
+
+--facturas (1) para cliente_3
+
+INSERT INTO factura(fecha_factura, subtotal, id_cliente)
+VALUES('2016-12-20',1500,3);
+
+INSERT INTO rel_producto_factura(id_item, id_factura, cantidad)
+VALUES(1, 6, 1);
+
+--facturas (4) para cliente_4
+
+INSERT INTO factura(fecha_factura, subtotal, id_cliente)
+VALUES('2015-06-03',4000,4);
+
+INSERT INTO factura(fecha_factura, subtotal, id_cliente)
+VALUES('2017-06-05',4500,4);
+
+INSERT INTO factura(fecha_factura, subtotal, id_cliente)
+VALUES('2018-08-12',12000,4);
+
+INSERT INTO factura(fecha_factura, subtotal, id_cliente)
+VALUES('2019-09-17',1500,4);
+
+INSERT INTO rel_producto_factura(id_item, id_factura, cantidad)
+VALUES(2, 8, 2);
+
+INSERT INTO rel_producto_factura(id_item, id_factura, cantidad)
+VALUES(5, 9, 3);
+
+INSERT INTO rel_producto_factura(id_item, id_factura, cantidad)
+VALUES(6, 10, 2);
+
+INSERT INTO rel_producto_factura(id_item, id_factura, cantidad)
+VALUES(8, 10, 2);
+
+INSERT INTO rel_producto_factura(id_item, id_factura, cantidad)
+VALUES(5, 11, 1);
+
