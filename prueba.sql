@@ -31,3 +31,19 @@ id_item INT REFERENCES producto(id_item),
 id_factura INT REFERENCES factura(numero_factura),
 cantidad INT NOT NULL 
 );
+
+
+INSERT INTO cliente(nombre_cliente, rut, direccion)
+VALUES('cliente_1', '12.456.390-K','direccion_1');
+
+INSERT INTO cliente(nombre_cliente, rut, direccion)
+VALUES('cliente_2', '12.456.391-K','direccion_2');
+
+INSERT INTO cliente(nombre_cliente, rut, direccion)
+VALUES('cliente_3', '12.456.392-3','direccion_3');
+
+INSERT INTO cliente(nombre_cliente, rut, direccion)
+VALUES('cliente_4', '12.456.399-6','direccion_4');
+
+INSERT INTO cliente(nombre_cliente, rut, direccion)
+VALUES('cliente_5', '12.387.763-3','direccion_5');
