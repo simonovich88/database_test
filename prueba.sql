@@ -1,3 +1,5 @@
+CREATE DATABASE prueba;
+
 CREATE TABLE cliente(
 id_cliente SERIAL PRIMARY KEY,
 nombre_cliente VARCHAR(20),
