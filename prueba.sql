@@ -173,3 +173,18 @@ VALUES(8, 10, 2);
 INSERT INTO rel_producto_factura(id_item, id_factura, cantidad)
 VALUES(5, 11, 1);
 
+
+--parte 3:Consultas
+
+--1-¿Que cliente realizó la compra más cara?
+
+SELECT id_cliente FROM factura WHERE subtotal =(SELECT MAX (subtotal) FROM factura);
+
+--2-¿Que cliente pagó sobre 100 de monto?
+
+SELECT id_cliente, MAX (subtotal) FROM factura GROUP BY	id_cliente HAVING MAX(subtotal) > 100;
+
+--3-¿Cuantos clientes han comprado el producto 6?
+
+SELECT COUNT (id_cliente) AS cantidad_de_clientes_prod_6 FROM factura INNER JOIN rel_producto_factura ON factura.numero_factura=rel_producto_factura.id_factura AND id_item=6;
+
