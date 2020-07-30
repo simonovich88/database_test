@@ -47,3 +47,12 @@ VALUES('cliente_4', '12.456.399-6','direccion_4');
 
 INSERT INTO cliente(nombre_cliente, rut, direccion)
 VALUES('cliente_5', '12.387.763-3','direccion_5');
+
+INSERT INTO categoria(nombre_categoria, descripcion)
+VALUES('cat_1', 'categoria_1');
+
+INSERT INTO categoria(nombre_categoria, descripcion)
+VALUES('cat_2', 'categoria_2');
+
+INSERT INTO categoria(nombre_categoria, descripcion)
+VALUES('cat_3', 'categoria_3');
